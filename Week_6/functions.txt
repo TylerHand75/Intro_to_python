@@ -1,0 +1,61 @@
+Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> x = input("enter something: ")
+enter something: something 
+>>> x
+'something '
+>>> type(x)
+<class 'str'>
+>>> y = 7
+>>> type(y)
+<class 'int'>
+>>> if isinstance(y, int):
+	print("was int")
+
+	
+was int
+>>> z = print("hello")
+hello
+>>> type(z)
+<class 'NoneType'>
+>>> def do_something (x, y):
+	return x + y
+
+>>> z = do_something(5,7)
+>>> z
+12
+>>> type(z)
+<class 'int'>
+>>> z = do_something(5.0,7.0)
+>>> z
+12.0
+>>> type(z)
+<class 'float'>
+>>> z = do_something("five", "seven")
+>>> z
+'fiveseven'
+>>> type(z)
+<class 'str'>
+>>> z = do_something(5, "seven")
+Traceback (most recent call last):
+  File "<pyshell#25>", line 1, in <module>
+    z = do_something(5, "seven")
+  File "<pyshell#15>", line 2, in do_something
+    return x + y
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+>>> z = do_something(5,7)
+>>> z
+12
+>>> x
+'something '
+>>> # a function is a main block of code that takes optional arguments
+>>> # and returns a option value. the function must have exactly one responability.
+>>> import random
+>>> rnadom.random ()
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    rnadom.random ()
+NameError: name 'rnadom' is not defined
+>>> random.random()
+0.7758318101855957
+>>> 

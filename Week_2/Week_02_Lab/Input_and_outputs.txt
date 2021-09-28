@@ -1,0 +1,81 @@
+File: Input_and_outputs.txt
+Date: 2021-09-02
+Author: Tyler hand 
+Description:
+	The inputs and outputs for the week 02 lab. 
+*******************************************************************************
+
+Input
+- 	name string the name of the user
+-	Int1 int the first integer 
+-	Int2 int the second integer 
+-	Int3 int the third integer 
+-	Float1 float the first floating point number
+-	Float2 float the second floating point number
+-	Float3 float the Third floating point number
+
+Outputs
+-	Name string
+-	int_sum int
+-	int_avg float
+-	float_sum float 
+-	float_avg float
+
+Process
+-	Print the title
+#	get intputs 
+-	Get name 
+-	get int 1
+-	get int 2 
+-	get int 3
+-	get float 1
+-	get float 2
+-	get float 3
+#	process the values 
+-	calculate int_sum
+-	calculate int_avg
+-	calculate float_sum
+-	calculate float_avg
+#	display outputs
+-	print name
+-	print int_sum
+-	print int_avg
+-	print float_sum
+-	print float_avg
+-	print program complete
+
+
+
+
+
+*******************************************************************************
+								END	OF FILE											
+*******************************************************************************
+
+
+*******************************************************************************
+
+In the Ask the User for Inputs section, prompt the user for values and save the input values to variables.  Be sure to be clear in the prompts strings and to convert non-string values into the correct data types.
+user_name as a string
+first_int as an int
+second_int as an int
+third_int as an int
+first_float as a float
+second_float as a float
+third_float as a float
+In the Perform Math Processing section:
+Print a message stating that the program is processing.
+Create a variable called number_of_int_values and set it to 3
+Create a variable called number_of_float_values and set it to 3
+Create a variable called int_sum and set it to the sum of the int values
+Create a variable called float_sum and set it to the sum of the float values
+Create a variable called int_avg and set it to the average of the int values
+Create a variable called float_avg and set it to the average of the float values
+Print a message stating that processing is complete
+In the Output the Results section:
+Print a message stating "Thank you for your input, " and the user name
+Print the properly labeled int_sum
+Print the properly labeled int_avg
+Print the properly labeled float_sum
+print the properly labeled float_avg
+Tell the user the program is complete.
