@@ -1,9 +1,9 @@
-#   FILE:   Sum_of_numbers..py
-#   DATE:   2021-09-26
+#   FILE:   nested_loops_pattern.py
+#   DATE:   2021-09-28
 #   AUTHOR: Tyler Hand
 #   DESCRIPTION:
 """
-This is a program to calculate the sum of numbers in a loop.
+this program is to make a upside down right triangle what a loop.
 
 """
 
@@ -23,17 +23,14 @@ def main(argv):
         None
     """
     # Show the program title
-    program_title = "*** Sum of numbers ***"
+    program_title = "*** Nested Loops Pattern ***"
     print(f'\n{program_title:^{CONSOLE_WIDTH}}')
     
-    user_number = float(input("Please enter the first number or a negative number to Quit: "))
-    total = 0 
-
-    while user_number > -1:
-        total = total + user_number
-        user_number = float(input("Please enter the next number or a negative number to Quit: "))
-
-    print("\nThe sum of all your numbers is " + str(total))
+    for rows in range(7, 0 , -1 ):
+        for column in range (rows, 0, -1):
+            print("*", end = "", )
+        print("")
+    
 
 
     print("\nProgram complete.\n")
