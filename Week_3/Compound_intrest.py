@@ -1,4 +1,4 @@
-#   FILE:   Week_03_Assignment_question_14.py
+#   FILE:   Compound_intrest.py
 #   DATE:   2021-09-12
 #   AUTHOR: Tyler Hand
 #   DESCRIPTION: 
@@ -23,7 +23,7 @@ def main(argv):
         None
     """
     # Show the program title
-    program_title = "*** Week 3 Assingnment question 14  ***"
+    program_title = "*** Compound_intrest  ***"
     print(f'\n{program_title:^{CONSOLE_WIDTH}}')
     # Get the inputs
 

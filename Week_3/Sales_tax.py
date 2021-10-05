@@ -1,9 +1,9 @@
-#   FILE:   Week_03_Assignment_question_9.py
+#   FILE:   Sales_tax.py
 #   DATE:   2021-09-12
 #   AUTHOR: Tyler Hand
 #   DESCRIPTION: 
 """
-this is the week_03_assignment_question_9.
+this is the week_03_assignment_question_6.
 
 """
 
@@ -23,25 +23,28 @@ def main(argv):
         None
     """
     # Show the program title
-    program_title = "*** Week 3 Assingnment question 9  ***"
+    program_title = "*** Sales_tax ***"
     print(f'\n{program_title:^{CONSOLE_WIDTH}}')
     # Get the inputs
 
-    celsius_prompt = "Please enter Celsius Temperature: "
-    celsius = float(input(celsius_prompt))
+    state_tax_title = 'State Tax'
+    country_tax_title = 'Country Tax'
+    purchase_amount = float(input('Please enter purchase amount:'))
     
     # Perform Processing
 
-    convert_temp = 9/5 * celsius + 32
+
     bar = "-" * CONSOLE_WIDTH
-    table_name = "Fahrenheit Temperature"
-    
+    table_name = "Taxes"
+    state_tax = purchase_amount*0.05
+    country_tax = purchase_amount*0.025
+
     # Display the outputs
 
     print(f"\n{table_name: ^{CONSOLE_WIDTH}}")
     print(bar)
-    print (f"\n | {table_name:^15s} | ")
-    print(f' | {convert_temp:<22f} | ')
+    print (f"\n | {state_tax_title:^15s} | {country_tax_title:^15s} | ")
+    print(f' | {state_tax:<15f} | {country_tax:<15f} | ')
     print(bar) 
 
     # Let the use know the program is done

@@ -1,9 +1,9 @@
-#   FILE:   Week_03_Assignment_part_2.py
+#   FILE:   Celsius_to_fahrenhiet_conversion.py
 #   DATE:   2021-09-12
 #   AUTHOR: Tyler Hand
 #   DESCRIPTION: 
 """
-this is the week_03_assignment_part_2.
+this is the week_03_assignment_question_9.
 
 """
 
@@ -23,27 +23,30 @@ def main(argv):
         None
     """
     # Show the program title
-    program_title = "*** Week 3 Assingnment part 2  ***"
+    program_title = "*** Celsius_to_fahrenhiet_conversion  ***"
     print(f'\n{program_title:^{CONSOLE_WIDTH}}')
     # Get the inputs
-    bar = "-" * CONSOLE_WIDTH
-    table_name = "Distances" 
-    # Perform Processing
-    distance_in_6_hours_title = "Distance in 6 Hours"
-    distance_in_10_hours_title = "Distance in 10 Hours"
-    distance_in_15_hours_title = "Distance in 15 Hours"
-    distance_in_6_hours = 70 * 6
-    distance_in_10_hours = 70 * 10
-    distance_in_15_hours = 70 * 15
 
+    celsius_prompt = "Please enter Celsius Temperature: "
+    celsius = float(input(celsius_prompt))
+    
+    # Perform Processing
+
+    convert_temp = 9/5 * celsius + 32
+    bar = "-" * CONSOLE_WIDTH
+    table_name = "Fahrenheit Temperature"
+    
     # Display the outputs
+
     print(f"\n{table_name: ^{CONSOLE_WIDTH}}")
     print(bar)
-    print (f"\n | {distance_in_6_hours_title} | {distance_in_10_hours_title} | {distance_in_15_hours_title} |")
-    print(f'| {distance_in_6_hours} | {distance_in_10_hours} | {distance_in_15_hours} | ')
+    print (f"\n | {table_name:^15s} | ")
+    print(f' | {convert_temp:<22f} | ')
     print(bar) 
+
     # Let the use know the program is done
-    
+    print("Program Complete")
+    print("End")
     
 
 # Call main()

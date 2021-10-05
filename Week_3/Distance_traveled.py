@@ -1,9 +1,9 @@
-#   FILE:   Week_03_Assignment_question_6.py
+#   FILE:   Distance_traveled.py
 #   DATE:   2021-09-12
 #   AUTHOR: Tyler Hand
 #   DESCRIPTION: 
 """
-this is the week_03_assignment_question_6.
+this is the week_03_assignment_part_2.
 
 """
 
@@ -23,33 +23,27 @@ def main(argv):
         None
     """
     # Show the program title
-    program_title = "*** Week 3 Assingnment quesiton 6  ***"
+    program_title = "*** Distance traveled ***"
     print(f'\n{program_title:^{CONSOLE_WIDTH}}')
     # Get the inputs
-
-    state_tax_title = 'State Tax'
-    country_tax_title = 'Country Tax'
-    purchase_amount = float(input('Please enter purchase amount:'))
-    
-    # Perform Processing
-
-
     bar = "-" * CONSOLE_WIDTH
-    table_name = "Taxes"
-    state_tax = purchase_amount*0.05
-    country_tax = purchase_amount*0.025
+    table_name = "Distances" 
+    # Perform Processing
+    distance_in_6_hours_title = "Distance in 6 Hours"
+    distance_in_10_hours_title = "Distance in 10 Hours"
+    distance_in_15_hours_title = "Distance in 15 Hours"
+    distance_in_6_hours = 70 * 6
+    distance_in_10_hours = 70 * 10
+    distance_in_15_hours = 70 * 15
 
     # Display the outputs
-
     print(f"\n{table_name: ^{CONSOLE_WIDTH}}")
     print(bar)
-    print (f"\n | {state_tax_title:^15s} | {country_tax_title:^15s} | ")
-    print(f' | {state_tax:<15f} | {country_tax:<15f} | ')
+    print (f"\n | {distance_in_6_hours_title} | {distance_in_10_hours_title} | {distance_in_15_hours_title} |")
+    print(f'| {distance_in_6_hours} | {distance_in_10_hours} | {distance_in_15_hours} | ')
     print(bar) 
-
     # Let the use know the program is done
-    print("Program Complete")
-    print("End")
+    
     
 
 # Call main()

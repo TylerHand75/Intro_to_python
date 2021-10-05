@@ -1,4 +1,4 @@
-#   FILE:   Week_03_Assignment_part_1.py
+#   FILE:   Personal_information.py
 #   DATE:   2021-09-09
 #   AUTHOR: Tyler Hand
 #   DESCRIPTION: 
@@ -23,7 +23,7 @@ def main(argv):
         None
     """
     # Show the program title
-    program_title = "*** Week 3 Assingnment part 1  ***"
+    program_title = "*** Personal_information  ***"
     print(f'\n{program_title:^{CONSOLE_WIDTH}}')
     # Get the inputs
 
