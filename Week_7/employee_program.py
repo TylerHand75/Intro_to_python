@@ -114,11 +114,11 @@ def do_program_logic():
         elif user_choice == 'Q' or user_choice == 'q':
             done = ui_helper.confirm_quit()
         else:
-            print(invalid_option_message)
+            ui_helper.show_message(invalid_option_message)
 
 
          # Let the use know the program is done
-        print("\nProgram complete.\n")
+        ui_helper.show_message("\nProgram complete.\n")
 
 
 # Call main()
