@@ -5,7 +5,7 @@
 """
 Demonstating using moduals. 
 """
-import ui_helper
+
 import sys
 
 # A constant for the number of characters across the console
