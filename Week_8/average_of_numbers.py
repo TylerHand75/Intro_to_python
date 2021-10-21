@@ -28,15 +28,15 @@ def main(argv):
     
     # Perform Processing
     
-    file = open('numbers.txt', 'r')
+    in_file = open('numbers.txt', 'r')
     ammount= 0
     total = 0
-    for line in file:
+    for line in in_file:
         ammount += int(line)
         total += 1
         average = (ammount/total)
     print(average)
-    file.close()
+    in_file.close()
     # Display the outputs
     
    
