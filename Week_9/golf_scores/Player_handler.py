@@ -11,16 +11,9 @@ import ui_helper
 FILE_NAME ='golf_scores.csv'
 
 
-
-# #############################################################################
-# employee handiling functions
-# these are the functions for working with employee records
-# #############################################################################
-
-
 def add_player():
     """
-
+    handles all the file adding functions 
     """
     ui_helper.show_section_title('Add a player')
     # get the employee id 
@@ -55,7 +48,7 @@ def add_player():
 
 def show_all_players():
     """
-    handles al the play logic
+    handles all the player logic
     """
     ui_helper.show_section_title('Show all players')
     # open the file in read mode
@@ -98,6 +91,7 @@ def show_all_players():
 
 def view_player_scores():
     """
+    handles the display of the players scores
     
     """
     ui_helper.show_section_title('View Players scores')
