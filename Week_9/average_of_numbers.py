@@ -1,14 +1,13 @@
-#   FILE:   Random_Number_File_Writer.py
-#   DATE:   2021-10-19
+#   FILE:   average_of_numbers.py
+#   DATE:   2021-10-24
 #   AUTHOR: Tyler Hand
 #   DESCRIPTION:
 """
-Description of file goes here.
+this is a continuation of exerise 6 from last week adding exceptions.
 
 """
 
 import sys
-import random
 
 # A constant for the number of characters across the console
 CONSOLE_WIDTH = 80
@@ -24,24 +23,30 @@ def main(argv):
         None
     """
     # Show the program title
-    program_title = "*** Random Number File Writer ***"
+    program_title = "*** Average of Numbers ***"
     print(f'\n{program_title:^{CONSOLE_WIDTH}}')
-    # Get the inputs
-    user_values = int(input('Enter number of values: '))
+    
     # Perform Processing
     try:
-        out_file = open('randomnumbers.txt', 'w')
-        for line in range( user_values ):
-            number = random.randint(1, 500)
-            out_file.write(str(number)+ '\n')
+        in_file = open('numbers.txt', 'r')
+        ammount= 0
+        total = 0
+        for line in in_file:
+            ammount += int(line)
+            total += 1
+            average = (ammount/total)
+        print(average)
+    except FileNotFoundError as fnf:
+        print(fnf)
     except ValueError as ve:
-        print("This in not an intager. Please try again.")   
+        print(ve)
+    except Exception as ex:
+        print(ex)
     finally:
         try:
-            out_file.close()
+            in_file.close()
         except:
             pass
-    
     # Display the outputs
     
    

@@ -1,14 +1,13 @@
-#   FILE:   Random_Number_File_Writer.py
-#   DATE:   2021-10-19
+#   FILE:   Random_number_file_reader.py
+#   DATE:   2021-10-23
 #   AUTHOR: Tyler Hand
 #   DESCRIPTION:
 """
-Description of file goes here.
+THis file is to show the sum of the numbers from the randomnumbers.txt and how many numbers it has in it.
 
 """
 
 import sys
-import random
 
 # A constant for the number of characters across the console
 CONSOLE_WIDTH = 80
@@ -24,24 +23,31 @@ def main(argv):
         None
     """
     # Show the program title
-    program_title = "*** Random Number File Writer ***"
+    program_title = "*** TITLE ***"
     print(f'\n{program_title:^{CONSOLE_WIDTH}}')
     # Get the inputs
-    user_values = int(input('Enter number of values: '))
+    
+    file_name = input('Please enter the file name: ')
     # Perform Processing
-    try:
-        out_file = open('randomnumbers.txt', 'w')
-        for line in range( user_values ):
-            number = random.randint(1, 500)
-            out_file.write(str(number)+ '\n')
-    except ValueError as ve:
-        print("This in not an intager. Please try again.")   
+    count = 0
+    total = 0 
+    try: 
+        in_file = open(file_name, 'r')
+        for line in in_file:
+            print(line.strip())
+            value = int(line)
+            count += 1
+            total += value
+    except FileNotFoundError as fnf:
+        print(f'Cannot find file {file_name}')
+    else: 
+        print(f'Count is: {count}')
+        print(f'Total is: {total}')
     finally:
         try:
-            out_file.close()
+            in_file.close()
         except:
             pass
-    
     # Display the outputs
     
    
