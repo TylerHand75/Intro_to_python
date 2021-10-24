@@ -1,5 +1,5 @@
 #   FILE:   Random_Number_File_Writer.py
-#   DATE:   3121-10-19
+#   DATE:   2021-10-19
 #   AUTHOR: Tyler Hand
 #   DESCRIPTION:
 """
@@ -29,12 +29,11 @@ def main(argv):
     # Get the inputs
     user_values = int(input('Enter number of values: '))
     # Perform Processing
-    number = 0
-    file = open('randomnumbers.txt', 'w')
-    for line in range(0, user_values + 1):
+    out_file = open('randomnumbers.txt', 'w')
+    for line in range( user_values ):
         number = random.randint(1, 500)
-        file.write(str(number)+ '\n')
-    file.close()
+        out_file.write(str(number)+ '\n')
+    out_file.close()
     
     # Display the outputs
     
