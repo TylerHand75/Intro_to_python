@@ -1,4 +1,4 @@
-#   FILE:   employee_program.py
+#   FILE:   Golf_scores.py
 #   DATE:   2021-10-24
 #   AUTHOR: Tyler Hand 
 #   DESCRIPTION:
@@ -46,7 +46,7 @@ def show_version():
     """
     display the current version of the program
     """
-    ui_helper.show_message(f'\n Employee program {VERSION}')
+    ui_helper.show_message(f'\n Golf scores {VERSION}')
     sys.exit(0)
 
 def show_help():
@@ -54,9 +54,9 @@ def show_help():
     display the usage information for this program 
     """
     ui_helper.show_message("\nUsage: ")
-    ui_helper.show_message("Python employee_program.py")
-    ui_helper.show_message("Python employee_program.py [ -? | -h | --help]")
-    ui_helper.show_message("Python employee_program.py[ -v | --version]\n")
+    ui_helper.show_message("Python Golf_scores.py")
+    ui_helper.show_message("Python Golf_scores.py [ -? | -h | --help]")
+    ui_helper.show_message("Python Golf_scores.py[ -v | --version]\n")
 
 def show_error(message):
     """
@@ -77,7 +77,7 @@ def do_program_logic():
     this is the primanry programing logic implmenting the menu.
     it repersents the primarty starting point for the comon use of this program
     """
-    program_title = 'Employee Program'
+    program_title = 'Golf Scores'
     ui_helper.show_program_title(program_title, CONSOLE_WIDTH)
     done = False
     invalid_option_message = "Your choice was not recognized. Try again."

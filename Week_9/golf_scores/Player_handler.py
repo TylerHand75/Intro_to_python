@@ -41,7 +41,7 @@ def add_player():
     # close the file
     out_file.close()
     # let the user know we are done
-    ui_helper.show_message("Employee records Saved. ")
+    ui_helper.show_message("Player records Saved. ")
     # tell the user to press the Enter key 
     ui_helper.press_enter_to_continue()
 
