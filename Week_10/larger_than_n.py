@@ -39,8 +39,12 @@ def main(argv):
     # random numbers 
     min_number = 1
     max_number = 500
-    start = 0 
-    while start < (min_number, max_number):
+    start = 20
+    for start in range (min_number,max_number):
+        random.randint
+        list.append
+
+
         print(min_number, max_number)
     
     
