@@ -1,27 +1,31 @@
-#   FILE:   larger_than_n.py
-#   DATE:   2021-10-28
-#   AUTHOR: Tyler hand 
+#   FILE:   Total_sales.py
+#   DATE:   2021-10-29
+#   AUTHOR: tyler hand
 #   DESCRIPTION:
 """
 Description of file goes here.
 
 """
-import random
+
 import sys
 
 # A constant for the number of characters across the console
 CONSOLE_WIDTH = 80
 
+def sales_total_sum(sales_list):
+    total = 0
+    for sale in sales_list:
+        total += sale
+    return total
 
-def bigger_than (n,list_a):
-    """
-    returns a list of all the values in list_a athat are larger than n
-    """
-    new_list = []
-    for value in list_a:
-        if value > n:
-            new_list.append(value)
-    return new_list
+
+def weekly_sales():
+    sales = []
+    for i in range(7):
+        sales_day = float(input("Enter sales for day: " ))
+        sales.append(sales_day)
+    return sales
+
 
 def main(argv):
     """
@@ -34,18 +38,13 @@ def main(argv):
         None
     """
     # Show the program title
-    program_title = "*** larger than N ***"
+    program_title = "*** Toltal Sales ***"
     print(f'\n{program_title:^{CONSOLE_WIDTH}}')
-    # random numbers 
-    min_number = 1
-    max_number = 500
-    start = 0 
-    while start < (min_number, max_number):
-        print(min_number, max_number)
+    # Get the inputs
     
-    
-    # Perform Processing
-    
+    sales = weekly_sales()
+    total_weekly_sales = sales_total_sum(sales)
+    print("The total weekly sales is ${:.2f}".format(total_weekly_sales))
     
     # Display the outputs
     
