@@ -49,6 +49,10 @@ def main(argv):
     print(n)
     print(the_list)
 
+
+    print(bigger_than)
+    
+    
     # Perform Processing
     larger = bigger_than(n,the_list)
     
