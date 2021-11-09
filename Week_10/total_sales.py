@@ -44,7 +44,7 @@ def main(argv):
     
     sales = weekly_sales()
     total_weekly_sales = sales_total_sum(sales)
-    print("The total weekly sales is ${:.2f}".format(total_weekly_sales))
+    print("The total weekly sales is $ "(total_weekly_sales))
     
     # Display the outputs
     
