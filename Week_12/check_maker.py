@@ -31,7 +31,7 @@ def main(argv):
     program_title = "*** Check Maker ***"
     print(f'\n{program_title:^{CONSOLE_WIDTH}}')
     # Get the inputs
-    records = employee_handler.get_all_records()
+    records = Employee_handler.get_all_records()
     check_date = datetime.date.today()
     check_number = LAST_CHECK_NUMBER
     with open("check_template.txt", "r") as in_file:
@@ -152,7 +152,7 @@ def tens_value_to_text(value, ones):
     return result
     
     # Let the use know the program is done
-    print("\nProgram complete.\n")
+print("\nProgram complete.\n")
    
 
 # Call main()
