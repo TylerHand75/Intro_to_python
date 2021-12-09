@@ -1,0 +1,71 @@
+Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+config = {}
+congig
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    congig
+NameError: name 'congig' is not defined. Did you mean: 'config'?
+config
+{}
+config['db_host'] = '127.0.0.1'
+config['db_port'] = 3606
+config
+{'db_host': '127.0.0.1', 'db_port': 3606}
+config['user_name'] = 'some_user'
+config['password'] = 'letMeIn'
+config['default_db'] = 'carlot'
+config
+{'db_host': '127.0.0.1', 'db_port': 3606, 'user_name': 'some_user', 'password': 'letMeIn', 'default_db': 'carlot'}
+def connect_to_db(my_config):
+    print(f'Connecting to {my_config.get("db_host", "Undefined")}')
+
+    
+connect_to_db(config)
+Connecting to 127.0.0.1
+config['db_host'] = '10.107.3.24'
+connect_to_db(config)
+Connecting to 10.107.3.24
+courses = {}
+courses['CS101'] = [3004, 'Haynes', '8:00 a.m.']
+courses
+{'CS101': [3004, 'Haynes', '8:00 a.m.']}
+courses['CS102'] = [4501, '
+                    ', '8:00 a.m.']
+SyntaxError: unterminated string literal (detected at line 1)
+courses['CS102'] = [4501, 'Alvarado', '9:00 a.m.']
+                    
+courses
+                    
+{'CS101': [3004, 'Haynes', '8:00 a.m.'], 'CS102': [4501, 'Alvarado', '9:00 a.m.']}
+courses['C103'] = [6755, 'Rich', '10:00 a.m.']
+                    
+courses['NT110'] = [1244, 'Burke', '11:00 a.m.']
+                    
+courses['CM241'] = [1411, 'Lee', '1:00 p.m.']
+                    
+courses['CS103'] = [6755, 'Rich', '10:00 a.m.']
+                    
+del courses['C103']
+                    
+courses
+                    
+{'CS101': [3004, 'Haynes', '8:00 a.m.'], 'CS102': [4501, 'Alvarado', '9:00 a.m.'], 'NT110': [1244, 'Burke', '11:00 a.m.'], 'CM241': [1411, 'Lee', '1:00 p.m.'], 'CS103': [6755, 'Rich', '10:00 a.m.']}
+course = input('Enter a course number: ').upper()
+                    
+Enter a course number: cs101
+course
+                    
+'CS101'
+courses.get(course, 'Unknown course number')
+                    
+[3004, 'Haynes', '8:00 a.m.']
+course = input('Enter a course number: ').upper()
+                    
+Enter a course number: X1
+course
+                    
+'X1'
+courses.get(course, 'Unknown course number')
+                    
+'Unknown course number'

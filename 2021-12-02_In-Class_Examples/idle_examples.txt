@@ -1,0 +1,81 @@
+Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+myset = set()
+myset
+set()
+myset = set(['a','b','c'])
+myset
+{'c', 'a', 'b'}
+my_list = ['a', 'b', 'c', 'a', 'd']
+myset = set(my_list)
+myset
+{'c', 'd', 'a', 'b'}
+len(my_list) == len(myset)
+False
+myset.add('x')
+myset
+{'b', 'x', 'a', 'c', 'd'}
+for value in myset:
+    print(value)
+
+    
+b
+x
+a
+c
+d
+'a' in myset
+True
+'k' in myset
+False
+'k' not in myset
+True
+other = set(['a', 'b', 'k', 'j', 'm'])
+# Find the UNION of two sets
+myset.union(other)
+{'b', 'k', 'x', 'a', 'm', 'c', 'd', 'j'}
+# Find the UNION using the | operator
+myset | other
+{'b', 'k', 'x', 'a', 'm', 'c', 'd', 'j'}
+# Find the INTERSECTION of two sets
+myset.intersection(other)
+{'a', 'b'}
+# Find the INTERSECTION with the & operator
+myset & other
+{'a', 'b'}
+# Find the DIFFERENCE of two sets
+myset.difference(other)
+{'c', 'x', 'd'}
+other.difference(myset)
+{'j', 'm', 'k'}
+# Find the DIFFERENCE using the - operator
+myset - other
+{'c', 'x', 'd'}
+other - myset
+{'j', 'm', 'k'}
+# Find the SYMMETRIC DIFFERENCE of two sets
+myset.symmetric_difference(other)
+{'x', 'm', 'c', 'd', 'j', 'k'}
+# Find the SYMMETRIC DIFFERENCE using the ^ operator
+myset ^ other
+{'x', 'm', 'c', 'd', 'j', 'k'}
+# Combinations
+(myset | other) - (myset & other)
+{'k', 'x', 'm', 'c', 'd', 'j'}
+a = set([1,2,3])
+b = set([1,2,3,4,5])
+a.issubset(b)
+True
+b.issubset(a)
+False
+b.issuperset(a)
+True
+a.issuperset(b)
+False
+a.issubset(a)
+True
+a.issubset(b) and b.issubset(a)
+False
+c = set([1,2,3])
+a.issubset(c) and c.issubset(a)
+True

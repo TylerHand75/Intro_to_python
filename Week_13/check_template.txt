@@ -1,0 +1,6 @@
+some company 									date:<date>
+										check number:<check_number>
+										
+										
+name: <name>								check amount:<amount>
+amount payed to <amount>
